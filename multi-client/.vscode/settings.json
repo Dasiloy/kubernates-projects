@@ -1,0 +1,10 @@
+{
+  "cSpell.words": ["dasiloy"],
+  "DockerRun.DisableDockerrc": true,
+  "DockerRun.Containers": [
+    "2d50679ddf8a",
+    "d8f9268b8df0",
+    "770d7b946cf4",
+    "6db70b2de7c1"
+  ]
+}

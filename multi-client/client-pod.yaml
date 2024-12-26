@@ -1,0 +1,19 @@
+apiVersion: v1 # api version for setting up the object types available for use
+kind: Pod  # the kind of object we creating, could be Pod,Service,Controller, etc
+metadata:
+  name: client-pod
+  labels:
+    component: web
+spec:
+  containers:
+     - name: client
+       image: dasiloy/docker-express-client
+       ports: 
+         - containerPort: 3000
+       resources:
+         limits:
+           memory: "512Mi"
+           cpu: "500m"
+         requests:
+           memory: "256Mi"
+           cpu: "250m"
